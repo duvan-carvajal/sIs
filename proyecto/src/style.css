@@ -1,0 +1,102 @@
+/* Estilos generales */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #0a0a0a;
+  font-family: Arial, sans-serif;
+  color: #ffffff;
+}
+
+header {
+  background-color: #111111;
+  padding: 15px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  border-bottom: 1px solid #333333;
+}
+
+/* Feed */
+.feed {
+  max-width: 600px;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Post */
+.post {
+  background-color: #1a1a1a;
+  border-radius: 10px;
+  padding: 15px;
+  border: 1px solid #333333;
+}
+
+.post-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.subreddit {
+  font-weight: bold;
+  color: #d7dadc;
+}
+
+.join-btn {
+  background-color: #0079d3;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.join-btn:hover {
+  background-color: #1484d6;
+}
+
+.post-content {
+  margin-bottom: 10px;
+}
+
+.post-title {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.post-image {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* Footer */
+.post-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.votes {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.votes button {
+  background: none;
+  border: none;
+  color: #ffffff;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.votes button:hover {
+  color: #aaaaaa;
+}
+
+.comments {
+  color: #d7dadc;
+}
