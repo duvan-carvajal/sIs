@@ -1,87 +1,120 @@
-/* Reset básico */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
-}
-
-body {
-  background-color: #f8f9fa;
+/* Login */
+.login-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 90vh;
+  padding: 1rem;
 }
 
-.login-container {
-  width: 90%;
-  max-width: 400px;
+.login-box {
   background: #fff;
-  padding: 2rem;
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  padding: 2rem;
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
 }
 
-.logo {
-  text-align: center;
+.login-title {
+  font-size: 1.4rem;
+  font-weight: bold;
   margin-bottom: 1.5rem;
-}
-
-.logo img {
-  width: 60px;
-}
-
-h2 {
-  text-align: center;
-  margin-bottom: 1rem;
-  color: #ff4500;
-}
-
-.form-group {
-  margin-bottom: 1rem;
-}
-
-.form-group label {
-  display: block;
-  margin-bottom: 0.5rem;
-  font-size: 0.9rem;
   color: #333;
 }
 
-.form-group input {
+.login-form input {
   width: 100%;
   padding: 0.8rem;
-  border: 1px solid #ddd;
+  margin-bottom: 1rem;
   border-radius: 8px;
-  font-size: 1rem;
+  border: 1px solid #ccc;
+  font-size: 0.95rem;
 }
 
-.btn {
+.login-btn {
   width: 100%;
-  padding: 0.9rem;
   background-color: #ff4500;
-  border: none;
-  border-radius: 8px;
   color: #fff;
+  border: none;
+  padding: 0.8rem;
+  border-radius: 8px;
   font-size: 1rem;
-  font-weight: bold;
   cursor: pointer;
-  transition: background 0.3s ease;
+  transition: background 0.2s ease;
 }
 
-.btn:hover {
+.login-btn:hover {
   background-color: #e03d00;
 }
 
-.register-link {
-  text-align: center;
-  margin-top: 1rem;
+.error {
+  color: red;
+  margin-top: 0.5rem;
+  font-size: 0.85rem;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  margin: 1rem 0;
+  color: #888;
   font-size: 0.9rem;
 }
 
-.register-link a {
+.divider span {
+  flex: 1;
+  text-align: center;
+  border-top: 1px solid #ddd;
+  line-height: 0;
+  position: relative;
+}
+
+.divider span::before {
+  content: "o";
+  position: absolute;
+  top: -0.6rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #fff;
+  padding: 0 0.5rem;
+}
+
+.social-login {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+.social-btn {
+  width: 100%;
+  padding: 0.7rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 0.9rem;
+  cursor: pointer;
+  background: #f6f7f8;
+}
+
+.social-btn.google {
+  color: #333;
+}
+
+.social-btn.apple {
+  color: #333;
+}
+
+.link {
+  font-size: 0.9rem;
+  margin-top: 1rem;
+}
+
+.link-btn {
+  background: none;
+  border: none;
   color: #ff4500;
-  text-decoration: none;
+  cursor: pointer;
   font-weight: bold;
 }
